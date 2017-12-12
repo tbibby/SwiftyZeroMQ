@@ -438,7 +438,7 @@ extension SwiftyZeroMQ {
         /**
           Interface to set an option which takes a Swift String.
          */
-        private func setStringOption(_ name: Int32, _ value: String?) throws {
+        public func setStringOption(_ name: Int32, _ value: String?) throws {
             let optValLen = (value != nil)
                 ? value!.count
                 : 0
